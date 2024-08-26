@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+</head>
+<body style="font-family: Arial, sans-serif; text-align: center; margin-top: 50px;">
+    <h1 style="color: #333;">Result</h1>
+    <img src="{{ url_for('static', filename=result_image_path) }}" alt="Processed Image" style="max-width: 100%; height: auto; border: 2px solid #ccc; border-radius: 10px; margin-top: 20px;">
+    <div style="margin-top: 20px;">
+        <a href="{{ url_for('upload_form') }}" style="padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; border-radius: 5px; cursor: pointer;">Upload another image</a>
+    </div>
+</body>
+</html>
